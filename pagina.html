@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="css/style.css"> <!-- CSS externo -->
+    <link rel="icon" type="image/png" href="./Imagens/Logo.png"/> <!-- Ícone da aba -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"> <!-- Configuração de codificação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <script src="javascript/script.js"></script> <!-- Link para o arquivo JavaScript -->
+    <title>Pagina de Adoção</title>
+    
+</head>
+
+<body>
+
+        <!-- Cabeçalho com navegação -->
+            <header class="navbar">
+        <div class="logo">
+            <a href="./index.html">
+            <img src="./Imagens/Logo.png" alt="Logo Adotaí">
+            </a>
+            <h1>Adotaí</h1>
+        </div>
+
+        <!-- Botão menu mobile -->
+        <button class="menu-toggle" aria-label="Abrir menu">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="nav-links">
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <br>
+        <br>
+        <h1> Informações sobre o Rex: </h1>
+        <div class="carrossel">
+
+            <div class="slide ativo">
+              <img src="./Imagens/Rex.webp" alt="Rex">
+            </div>
+          
+            <div class="slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/64X4cuAR2fI?si=VYo4Jkm-hMQxhbWR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="slide">
+                <img src="./Imagens/Rex2.jpg">
+            </div>
+          
+            
+            
+            <button class="carrossel-btn prev">&#10094;</button>
+            <button class="carrossel-btn next">&#10095;</button>
+          
+          </div>
+          
+          
+
+        <div class="tabela-container">
+        <table class="tabela-adocao">
+            
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Espécie</th>
+                <th>Idade</th>
+                <th>Raça</th>
+                <th>Porte</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Rex</td>
+                <td>Cão</td>
+                <td>2 anos</td>
+                <td>Labrador</td>
+                <td>Médio</td>
+                <td class="status-disponivel">Disponível</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2 class="titulo-secao">Requisitos para Adoção</h2>
+                <ul class="lista-adocao">
+                <li>Ser <strong>maior de 18 anos</strong></li>
+                <li>Compromisso com a <em>saúde e bem-estar</em> do animal</li>
+                <li>Ambiente adequado para o porte do pet</li>
+                <li>Disponibilidade para vacinação e acompanhamento veterinário</li>
+                <li>Responsabilidade e amor pelos animais</li>
+                </ul>
+        </div>
+
+        <center><a href="Cadastro.html"><button class="btn-svg">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+            </svg>
+            Adotar
+            </button></a>
+            </center>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

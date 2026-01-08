@@ -1,0 +1,522 @@
+
+:root {
+  --navbar-altura: 80px;
+}
+
+body{
+    font-family: 'Alumni Sans Pinstripe' , Arial, sans-serif;
+    margin: 20px;
+    background-color: #ffffff;
+    padding-top: 80px;
+}
+h1{
+    text-align: center;
+    font-size: 3vw;
+    color: #217a68;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    font-size: 4vw;
+}
+.inicio{
+    text-align: center;
+    font-size: 3vw;
+    color: #217a68;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 300px;
+    padding: auto;
+}
+ul{
+    font-family: 'poppins', sans-serif;
+}
+.center-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.imagem{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    width: 50%;
+}
+figcaption{
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 1.2vw;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+p{
+    text-align: center;
+    font-size: 2.3vw;
+    color: #217a68;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  height: var(--navbar-altura);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff9eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  overflow: visible;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #217a68;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #14594d;
+}
+
+/* Botão hamburguer */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #217a68;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: var(--navbar-altura);
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background-color: #fff9eb;
+    width: 100%;
+    gap: 20px;
+    padding: 20px 0;
+    align-items: center;
+
+    /* menu fechado */
+    display: none;
+  }
+
+  /* menu aberto */
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.logo h1 {
+  font-size: 22px;
+  color: #217a68;
+  font-weight: 600px;
+  margin-top: 20px;
+}
+
+
+
+.titulo-secao {
+  text-align: center;
+  font-size: 24px;
+  color: #217a68;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+.pet-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px; /* Espaço entre os cards */
+  margin-bottom: 40px; /* Espaço depois da galeria */
+}
+
+.pet-card {
+  width: 230px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px; 
+}
+
+.pet-card img {
+  width: auto;
+  height: 50%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* Estilo do texto */
+.pet-card h3 {
+  margin: 8px 0 6px;
+  color: #14594d;
+  position: inherit;
+}
+
+.pet-card p {
+  color: #217a68;
+  font-size: 15px;
+  margin: 4px 0;
+  position: relative;
+}
+
+/* Botão */
+.pet-card button {
+  background-color: #217a68;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-top: auto; /* empurra o botão pra baixo */
+  transition: background-color 0.3s;
+}
+
+.pet-card button:hover {
+  background-color: #14594d;
+}
+
+.card{
+    font-size: 1.2vw;
+    color: #217a68;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0;
+    align-items: center;
+    margin-top: 10px;
+}
+.sobre{
+    font-size: 2vw;
+    color: #217a68;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 40px;
+    text-align: justify;
+}
+.link{
+    color: #217a68;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    /* No seu arquivo CSS */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none; /* Começa escondido */
+  font-size: 20px;
+  color: white;
+  background-color: #217a69;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.back-to-top.visible {
+  display: block; /* Exibe o botão quando tiver a classe "visible" */
+}
+
+a button {
+  width: 100%;
+}
+a .btn-svg{
+  width: auto;
+}
+/* Container opcional para centralizar */
+.tabela-container {
+  margin: 40px auto;
+  max-width: 900px;
+  background-color: #fff9eb;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Tabela */
+.tabela-adocao {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Cabeçalho */
+.tabela-adocao thead {
+  background-color: #217a68;
+}
+
+.tabela-adocao th {
+  color: #ffffff;
+  padding: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Corpo */
+.tabela-adocao td {
+  padding: 14px;
+  text-align: center;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Linhas alternadas */
+.tabela-adocao tbody tr:nth-child(even) td {
+  background-color: #f3f7f6;
+}
+
+/* Hover */
+.tabela-adocao tbody tr:hover td {
+  background-color: #e1f1ed;
+  transition: background-color 0.3s;
+}
+
+/* Status */
+.status-disponivel {
+  color: #217a68;
+  font-weight: bold;
+}
+
+.status-adotado {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.lista-adocao {
+  list-style: none; /* remove bolinha padrão */
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.lista-adocao li {
+  background-color: #fff9eb;
+  color: #217a68;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  font-size: 1.4vw;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+/* Ajuste para mobile */
+@media (max-width: 768px) {
+  .lista-adocao li {
+    font-size: 16px;
+  }
+}
+.btn-svg {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 22px;
+  background-color: #217a68;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* SVG dentro do botão */
+.btn-svg svg {
+  fill: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+/* Hover */
+.btn-svg:hover {
+  background-color: #14594d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Animação do ícone no hover */
+.btn-svg:hover svg {
+  transform: scale(1.1);
+}
+
+/* Clique */
+.btn-svg:active {
+  transform: scale(0.97);
+}
+
+
+
+.carrossel {
+  position: relative;
+  max-width: 700px;
+  height: 400px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #fff9eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Slide */
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.slide.ativo {
+  display: block;
+}
+
+/* Imagem e iframe */
+.slide img,
+.slide iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+/* Botões */
+.carrossel {
+  position: relative;
+}
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(33, 122, 104, 0.85);
+  color: #fff9eb;
+  border: none;
+  font-size: 28px;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+
+.carrossel-btn:hover {
+  background-color: #14594d;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .carrossel {
+    height: 250px;
+  }
+}
+
+/* Container do formulário */
+.form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #fff9eb;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Formulário */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Campo individual */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  color: #217a68;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Inputs */
+.campo input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 2px solid #d7eae6;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.campo input:focus {
+  outline: none;
+  border-color: #217a68;
+  box-shadow: 0 0 0 3px rgba(33, 122, 104, 0.15);
+}
+
+/* Botão já no seu padrão */
+.formulario .btn-svg {
+  margin-top: 10px;
+  justify-content: center;
+}
+

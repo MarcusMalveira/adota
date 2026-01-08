@@ -182,5 +182,7 @@ document.getElementById("formCadastro").addEventListener("submit", function (e) 
     console.log(dados);
 
     alert("Cadastro realizado com sucesso!");
+	 window.location.href = "./index.html";
 });
+
 

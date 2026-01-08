@@ -168,3 +168,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+document.getElementById("formCadastro").addEventListener("submit", function (e) {
+    e.preventDefault(); // impede o envio padrão
+
+    const dados = {
+        nome: document.getElementById("nome").value,
+        email: document.getElementById("email").value,
+        cpf: document.getElementById("cpf").value,
+        telefone: document.getElementById("telefone").value,
+        senha: document.getElementById("senha").value
+    };
+
+    console.log(dados);
+
+    alert("Cadastro realizado com sucesso!");
+});
+
